@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aqx-AO-uRI">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="jtU-EI-dMO">
+            <objects>
+                <navigationController id="aqx-AO-uRI" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DLH-wx-26g">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="OTc-4O-tj2" kind="relationship" relationship="rootViewController" id="1gB-lG-ov9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kwk-6k-wDk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-809" y="361"/>
+        </scene>
+        <!--TCDInputView Demo-->
+        <scene sceneID="EOk-U8-pzq">
+            <objects>
+                <viewController id="OTc-4O-tj2" customClass="ViewController" customModule="TCDInputView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="usH-xx-0S9"/>
+                        <viewControllerLayoutGuide type="bottom" id="S9E-7d-wQG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CVc-In-pZc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rdu-gt-TEZ" customClass="TextField" customModule="TCDInputView" customModuleProvider="target">
+                                <rect key="frame" x="20" y="84" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="OTc-4O-tj2" id="nzd-zr-mpL"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="rdu-gt-TEZ" secondAttribute="trailing" id="5HA-lt-lf5"/>
+                            <constraint firstItem="rdu-gt-TEZ" firstAttribute="leading" secondItem="CVc-In-pZc" secondAttribute="leadingMargin" id="EZ9-um-Htk"/>
+                            <constraint firstItem="rdu-gt-TEZ" firstAttribute="top" secondItem="usH-xx-0S9" secondAttribute="bottom" constant="20" id="a03-fl-Ba9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="TCDInputView Demo" id="fpI-gw-QTA"/>
+                    <connections>
+                        <outlet property="textField" destination="rdu-gt-TEZ" id="HR6-er-hvM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fth-mB-vFr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-74" y="361"/>
+        </scene>
+    </scenes>
+</document>
