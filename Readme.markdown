@@ -4,7 +4,7 @@ TCDInputView is an open source custom input view which is displayed when a text 
 <img src="http://tomdiggle.com/assets/images/tcdinputview.png" width="320" height="216">
 
 ## Requirements
-TCDInputView requires Swift 2.0 and Xcode 7.0 b4 to run.
+TCDInputView requires Swift 2.0 and Xcode 7.0 b5 to run.
 
 ## Adding TCDInputView To Your Project
 ### Source Files
