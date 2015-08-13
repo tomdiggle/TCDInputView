@@ -36,7 +36,7 @@ class TextField: UITextField, KeyboardViewDelegate {
     
     func backspaceButtonTapped() {
         if self.text!.characters.count > 0 {
-            self.text = String(dropLast(self.text!.characters))
+            self.text = String(self.text!.characters.dropLast())
         }
     }
     
