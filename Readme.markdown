@@ -17,5 +17,5 @@ To display the custom input view when a text field becomes the first responder m
 Changelog can be viewed [here](https://github.com/tomdiggle/tcdinputview/blob/master/Changelog.markdown).
 
 ## License
-TCDInputView is distributed under the [MIT License](https://github.com/tomdiggle/tcdinputview/blob/master/License.markdown).
+TCDInputView is distributed under the [MIT License](https://github.com/tomdiggle/tcdinputview/blob/master/LICENSE).
 
